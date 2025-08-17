@@ -1,0 +1,148 @@
+
+.body-index{
+    background-color: rgba(46, 46, 46, 0.882);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#imagem-de-capa{
+    opacity: 70%;
+}
+#imagem-de-capa:hover{
+    opacity: 75%;
+}
+#logo{
+    position: relative;
+    width: 350px;
+    mix-blend-mode: color-burn;
+    display: flex;
+    float: left;
+}
+
+.bg-gray {
+    background-color: #9f9f9f;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #fff;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+  color: #ffffff;
+}
+.nav-link:hover{
+    background-color: rgba(46, 46, 46, 0.964);
+    border-radius: 10px;
+    opacity: 0.7;
+}
+
+hr.bg-white {
+  border-top: 3px solid #ffffff;
+  width: 100%;
+  margin-top: 3px;
+}
+
+.float-right {
+  float: right;
+}
+
+.navbar-nav {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  
+}
+
+.nav-item {
+  margin-right: 20px;
+}
+
+span i{
+    margin-right: 10px;
+}
+
+#footer span{
+  flex-basis: 20%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin-left: 40px;
+}
+
+#footer #footer-link:link{
+  text-decoration: none;
+  color: white;
+}
+
+#footer-link:link {
+    background-color: transparent;
+    text-decoration: none;
+}
+#footer-link:visited {
+    color: rgb(215, 13, 13);
+    background-color: transparent;
+    text-decoration: none;
+}
+#footer-link:active {
+    color: rgb(115, 34, 34);
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+
+
+
+
+/* A partir daqiu o css é da pagina "Sobre" */
+
+.body-sobre {
+    background-color: rgba(46, 46, 46, 0.882);
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+section {
+  background-color: #f7f7f7;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  margin-top: 0;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;  
+  position: relative;
+  right: 30px;
+}
+
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  clear: both;
+}
