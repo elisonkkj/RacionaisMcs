@@ -7,110 +7,200 @@
     <meta name="author" content="Elison Emanuel">
     <meta name="description" content="Proximos Shows do Racionais Mcs">
     <meta name="keywords" content="Racionais Mcs, Rap, Hip Hop, Música Brasileira">
-    <link rel="stylesheet" href="albuns.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/42a6c86616.js" crossorigin="anonymous"></script>
     <title>Tour</title>
+    <style>
+        .card-img-top {
+            height: 300px;
+            object-fit: cover;
+        }
+
+        .btn-dark-custom {
+            background-color: #000000de;
+            color: #fff;
+            border: none;
+            transition: 0.2s;
+        }
+
+        .btn-dark-custom:hover {
+            background-color: #b3b3b3de;
+            color: #000;
+        }
+
+        #footer #footer-link:link {
+            text-decoration: none;
+            color: white;
+        }
+
+        #footer-link:link {
+            background-color: transparent;
+            text-decoration: none;
+        }
+
+        #footer-link:visited {
+            color: rgb(0, 0, 0);
+            background-color: transparent;
+            text-decoration: none;
+        }
+
+        #footer-link:active {
+            color: rgb(255, 255, 255);
+            background-color: transparent;
+            text-decoration: underline;
+        }
+
+        #footer-link:hover {
+            text-decoration: underline rgb(144, 144, 144);
+        }
+    </style>
 </head>
 
-<body class="body-tour">
-    <h2 class="titulo-proximos-shows">Proximos Shows</h2>
-    <section class="cards">
-        <div class="card" id="card-1">
-            <img class="card-img"
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcjhYmqA3Z-Sl6AlMm0Ov_t6Lkdy_VEqIHJuiXuta8oxyHOsBtfOdNfOvnJWLPgfvzh68&usqp=CAU"
-                alt="imagem de propaganda de um show do Racionais">
-            <h2>Racionais Mc`s</h2>
-            <p>Av jucelino kobayashi </p>
-            <p>10/04/2025</p>
-            <button onclick="window.location.href='contactos.html'">Comprar ingresso</button>
-        </div>
-        <div class="card" id="card-2">
-            <img class="card-img" src="https://img.cdndsgni.com/preview/10284952.jpg"
-                alt="imagem de propaganda de um show do Racionais">
-            <h2>Racionais Mc`s
-            </h2>
-            <p>Av São Cristóvão </p>
-            <p>10/05/2025</p>
-            <button onclick="window.location.href='contactos.html'">Comprar ingresso</button>
-        </div>
-        <div class="card" id="card-3">
-            <img class="card-img"
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdCflFFHa2lC7Xs0cTehxGPacFtzcsrFsj44jN63N7QxLTP9HzBE7IHqJt9LHfip4R_Yw&usqp=CAU"
-                alt="imagem de propaganda de um show do Racionais">
-            <h2>Show Racionais</h2>
-            <p>Barraca Biruta - Fortaleza</p>
-            <p>16/11/2025</p>
-            <button onclick="window.location.href='contactos.html'">Comprar ingresso</button>
-        </div>
-        <div class="card" id="card-4">
-            <img class="card-img"
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRagbScvBqbCJUU6aAE7xGkIE-d6_-DVwPGP9P5q2le-Yf-8C8fymTKTy-P8e_pogS7sXA&usqp=CAU"
-                alt="imagem de propaganda de um show do Racionais">
-            <h2>Racionais São Paulo</h2>
-            <p>Via marquês - São Paulo</p>
-            <p>19/12/2025</p>
-            <button onclick="window.location.href='contactos.html'">Comprar ingresso</button>
-        </div>
-        <div class="card" id="card-5">
-            <img class="card-img"
-                src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEitu4AHZ39rvpojiufhXAC81UOGzUDok9iS9lkBf5ZJr3w7aYaTIgAD_qzpKKoK3ppg1XzmkBrGr6Xkz7rcpIVAZ0mqxBFiX3txY85pWUl4U2AkfO1DAryBnX4Y0GDwn9giqj2Fq4PGXX0/s1600/85.jpg"
-                alt="imagem de propaganda de um show do Racionais">
-            <h2>Show Racionais</h2>
-            <p>Av Marta Arantes</p>
-            <p>14/04/2026</p>
-            <button onclick="window.location.href='contactos.html'">Comprar ingresso</button>
-        </div>
-        <div class="card" id="card-6">
-            <img class="card-img" src="https://www.rapnacional.com.br/wp-content/uploads/Racionais-@-Flyer-frente-3.jpg"
-                alt="imagem de propaganda de um show do Racionais">
-            <h2>Racionais e Facção central</h2>
-            <p>Espaço Victory - São Paulo</p>
-            <p>10/05/2026</p>
-            <button onclick="window.location.href='contactos.html'">Comprar ingresso</button>
-        </div>
-    </section>
-
-
-    <footer>
-        <div class="container-fluid">
-            <div class="row" id="footer">
-                <span>
-                    <i class="fa-brands fa-instagram" aria-hidden="true"></i>
-                    <a id="footer-link" href="https://www.instagram.com/racionaiscn/?hl=pt#"
-                        target="_blank">Instagram</a>
-                </span>
-                <span>
-                    <i class="fa-brands fa-facebook" aria-hidden="true"></i>
-                    <a id="footer-link" href="https://www.facebook.com/racionaiscn/" target="_blank">Facebook</a>
-                </span>
-                <span>
-                    <i class="fa-brands fa-x-twitter" aria-hidden="true"></i>
-                    <a id="footer-link" href="https://x.com/racionaiscn" target="_blank">Twitter</a>
-                </span>
-                <span>
-                    <i class="fa-brands fa-youtube" aria-hidden="true"></i>
-                    <a id="footer-link" href="https://www.youtube.com/@RacionaisTV/videos" target="_blank">Youtube</a>
-                </span>
+<body style="background-color: #1C1C1C;" class="body-tour">
+    <nav style="background-color: #9f9f9f;" class="navbar navbar-expand-lg navbar-dark justify-content-end text-end">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img style="mix-blend-mode: color-burn;" id="logo"
+                    src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Racionais_MC%27s.png"
+                    alt="Logo Racionais Mcs" width="250">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu-principal"
+                aria-controls="menu-principal" aria-expanded="false" aria-label="Alternar navegação">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="menu-principal">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="sobre.html">Sobre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="albuns.html">Álbuns</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="tour.html">Tour</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="contactos.html">Contatos</a>
+                    </li>
+                </ul>
             </div>
-            <div class="container-fluid"><br>
-                <div class="row" id="copyrirght">
-                    <div class="copyrirght">Copyright &copy; 2025 Elison Emanuel. Todos os direitos reservados"
+        </div>
+    </nav>
+
+    <div class="container my-4">
+        <div class="row g-3">
+
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="card h-100 border border-secondary">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcjhYmqA3Z-Sl6AlMm0Ov_t6Lkdy_VEqIHJuiXuta8oxyHOsBtfOdNfOvnJWLPgfvzh68&usqp=CAU"
+                        class="card-img-top" alt="imagem de propaganda de um show do Racionais">
+                    <div class="card-body d-flex flex-column text-center">
+                        <h5 class="card-title">Racionais Mc`s</h5>
+                        <p class="card-text">Av jucelino kobayashi</p>
+                        <p class="card-text">10/04/2025</p>
+                        <a href="contactos.html" class="btn btn-dark-custom w-100 mt-auto">Comprar ingresso</a>
                     </div>
                 </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="card h-100 border border-secondary">
+                    <img src="https://img.cdndsgni.com/preview/10284952.jpg" class="card-img-top"
+                        alt="imagem de propaganda de um show do Racionais">
+                    <div class="card-body d-flex flex-column text-center">
+                        <h5 class="card-title">Racionais Mc`s</h5>
+                        <p class="card-text">Av São Cristóvão</p>
+                        <p class="card-text">10/05/2025</p>
+                        <a href="contactos.html" class="btn btn-dark-custom w-100 mt-auto">Comprar ingresso</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="card h-100 border border-secondary">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdCflFFHa2lC7Xs0cTehxGPacFtzcsrFsj44jN63N7QxLTP9HzBE7IHqJt9LHfip4R_Yw&usqp=CAU"
+                        class="card-img-top" alt="imagem de propaganda de um show do Racionais">
+                    <div class="card-body d-flex flex-column text-center">
+                        <h5 class="card-title">Show Racionais</h5>
+                        <p class="card-text">Barraca Biruta - Fortaleza</p>
+                        <p class="card-text">16/11/2025</p>
+                        <a href="contactos.html" class="btn btn-dark-custom w-100 mt-auto">Comprar ingresso</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="card h-100 border border-secondary">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRagbScvBqbCJUU6aAE7xGkIE-d6_-DVwPGP9P5q2le-Yf-8C8fymTKTy-P8e_pogS7sXA&usqp=CAU"
+                        class="card-img-top" alt="imagem de propaganda de um show do Racionais">
+                    <div class="card-body d-flex flex-column text-center">
+                        <h5 class="card-title">Racionais São Paulo</h5>
+                        <p class="card-text">Via marquês - São Paulo</p>
+                        <p class="card-text">19/12/2025</p>
+                        <a href="contactos.html" class="btn btn-dark-custom w-100 mt-auto">Comprar ingresso</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="card h-100 border border-secondary">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEitu4AHZ39rvpojiufhXAC81UOGzUDok9iS9lkBf5ZJr3w7aYaTIgAD_qzpKKoK3ppg1XzmkBrGr6Xkz7rcpIVAZ0mqxBFiX3txY85pWUl4U2AkfO1DAryBnX4Y0GDwn9giqj2Fq4PGXX0/s1600/85.jpg"
+                        class="card-img-top" alt="imagem de propaganda de um show do Racionais">
+                    <div class="card-body d-flex flex-column text-center">
+                        <h5 class="card-title">Show Racionais</h5>
+                        <p class="card-text">Av Marta Arantes</p>
+                        <p class="card-text">14/04/2026</p>
+                        <a href="contactos.html" class="btn btn-dark-custom w-100 mt-auto">Comprar ingresso</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="card h-100 border border-secondary">
+                    <img src="https://www.rapnacional.com.br/wp-content/uploads/Racionais-@-Flyer-frente-3.jpg"
+                        class="card-img-top" alt="imagem de propaganda de um show do Racionais">
+                    <div class="card-body d-flex flex-column text-center">
+                        <h5 class="card-title">Racionais e Facção central</h5>
+                        <p class="card-text">Espaço Victory - São Paulo</p>
+                        <p class="card-text">10/05/2026</p>
+                        <a href="contactos.html" class="btn btn-dark-custom w-100 mt-auto">Comprar ingresso</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <footer style="background-color: #818080;" class="text-center p-4">
+        <div style="color: black;" class="container">
+            <div class="row mb-2">
+                <div class="col">
+                    <a id="footer-link" class="me-3" href="https://www.instagram.com/racionaiscn/?hl=pt#"
+                        target="_blank">
+                        <i style="color: black;" class="fa-brands fa-instagram"></i> Instagram
+                    </a>
+                    <a id="footer-link" class="me-3" href="https://www.facebook.com/racionaiscn/" target="_blank">
+                        <i style="color: black;" class="fa-brands fa-facebook"></i> Facebook
+                    </a>
+                    <a id="footer-link" class="me-3" href="https://x.com/racionaiscn" target="_blank">
+                        <i style="color: black;" class="fa-brands fa-x-twitter"></i> Twitter
+                    </a>
+                    <a id="footer-link" href="https://www.youtube.com/@RacionaisTV/videos" target="_blank">
+                        <i style="color: black;" class="fa-brands fa-youtube"></i> YouTube
+                    </a>
+                </div>
+            </div>
+            <div>
+                <p class="mb-0">Copyright &copy; 2025 Elison Emanuel. Todos os direitos reservados</p>
             </div>
         </div>
     </footer>
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
-        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
 </body>
 
