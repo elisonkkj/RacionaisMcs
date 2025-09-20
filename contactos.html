@@ -7,89 +7,118 @@
     <meta name="author" content="Elison Emanuel">
     <meta name="description" content="formulario de contacto de racionais mcs">
     <meta name="keywords" content="Racionais Mcs, Rap, Hip Hop, Música Brasileira">
-    <link rel="stylesheet" href="albuns.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/42a6c86616.js" crossorigin="anonymous"></script>
     <title>contactos</title>
 </head>
 
-<body class="body-contactos">
-
-    <h2 class="container-fluid" id="title-contactos">Contactos</h2>
-
-    <form id="meuFormulario" onsubmit="return enviarFormulario()">
-        <label for="nome">Nome:</label>
-        <input type="text" id="nome" name="nome" required>
-        <label for="Apelido">Apelido:</label>
-        <input type="text" id="Apelido" name="Apelido" required>
-        <label for="Data">Data:</label>
-        <input type="date" id="Data" name="Data" required>
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
-        <label for="telefone">Telefone:</label>
-        <input type="tel" id="telefone" name="telefone" maxlength="12" required>
-        <label for="mensagem">Mensagem:</label>
-        <textarea id="mensagem"></textarea>
-        <input id="btn-enviar" type="submit" value="Enviar">
-        <div class="mensagem-sucesso" style="display: none;">Formulário enviado com sucesso!</div>
-    </form>
-
-    <footer>
-        <div class="container-fluid">
-            <div class="row" id="footer">
-                <span>
-                    <i class="fa-brands fa-instagram" aria-hidden="true"></i>
-                    <a id="footer-link" href="https://www.instagram.com/racionaiscn/?hl=pt#"
-                        target="_blank">Instagram</a>
-                </span>
-                <span>
-                    <i class="fa-brands fa-facebook" aria-hidden="true"></i>
-                    <a id="footer-link" href="https://www.facebook.com/racionaiscn/" target="_blank">Facebook</a>
-                </span>
-                <span>
-                    <i class="fa-brands fa-x-twitter" aria-hidden="true"></i>
-                    <a id="footer-link" href="https://x.com/racionaiscn" target="_blank">Twitter</a>
-                </span>
-                <span>
-                    <i class="fa-brands fa-youtube" aria-hidden="true"></i>
-                    <a id="footer-link" href="https://www.youtube.com/@RacionaisTV/videos" target="_blank">Youtube</a>
-                </span>
+<body style="background-color: #1C1C1C ;">
+    <nav style="background-color: #9f9f9f;" class="navbar navbar-expand-lg navbar-dark justify-content-end text-end">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img style="mix-blend-mode: color-burn;" id="logo"
+                    src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Racionais_MC%27s.png"
+                    alt="Logo Racionais Mcs" width="250">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu-principal"
+                aria-controls="menu-principal" aria-expanded="false" aria-label="Alternar navegação">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="menu-principal">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="sobre.html">Sobre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="albuns2.html">Álbuns</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="tour.html">Tour</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="contactos.html">Contatos</a>
+                    </li>
+                </ul>
             </div>
-            <div class="container-fluid"><br>
-                <div class="row" id="copyrirght">
-                    <div class="copyrirght">Copyright &copy; 2025 Elison Emanuel. Todos os direitos reservados"
+        </div>
+    </nav>
+
+    <div class="container my-5">
+        <div style="background-color: #bbbbbb;" class="card shadow-lg border-0 rounded-4">
+            <div class="card-body p-4">
+                <form id="meuFormulario" onsubmit="return enviarFormulario()">
+                    <div class="row g-3">
+                        <div class="col-md-6"> <label
+                                style="font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif, Geneva, Tahoma, sans-serif; font-size: 18px;"
+                                for="nome" class="form-label">Nome</label> <input
+                                style="background-color: #9f9f9f00; border: 2px solid #000000; border-radius: 12px;"
+                                type="text" id="nome" placeholder="Minato" name="nome" class="form-control" required>
+                        </div>
+                        <div class="col-md-6"> <label
+                                style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif, Geneva, Tahoma, sans-serif; font-size: 18px;"
+                                for="Apelido" class="form-label">Apelido</label> <input
+                                style="background-color: #9f9f9f00; border: 2px solid #000000; border-radius: 12px;"
+                                type="text" id="Apelido" name="Apelido" placeholder="Namikase" class="form-control"
+                                required> </div>
+                        <div class="col-md-6"> <label
+                                style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif, Geneva, Tahoma, sans-serif; font-size: 18px;"
+                                for="Data" class="form-label">Data</label> <input
+                                style="background-color: #9f9f9f00; border: 2px solid #000000; border-radius: 12px;"
+                                type="date" id="Data" name="Data" class="form-control" required> </div>
+                        <div class="col-md-6"> <label
+                                style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif, Geneva, Tahoma, sans-serif; font-size: 18px;"
+                                for="email" class="form-label">Email</label> <input
+                                style="background-color: #9f9f9f00; border: 2px solid #000000; border-radius: 12px;"
+                                type="email" id="email" name="email" placeholder="minatonmks123@gmail.com"
+                                class="form-control" required> </div>
+                        <div class="col-md-6"> <label
+                                style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif, Geneva, Tahoma, sans-serif; font-size: 18px;"
+                                for="telefone" class="form-label">Telefone</label> <input
+                                style="background-color: #9f9f9f00; border: 2px solid #000000; border-radius: 12px;"
+                                type="tel" id="telefone" name="telefone" placeholder="(+351) 123 456 789" maxlength="12"
+                                class="form-control" required> </div>
+                        <div class="col-12"> <label
+                                style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif, Geneva, Tahoma, sans-serif; font-size: 18px;"
+                                for="mensagem" class="form-label">Mensagem</label> <textarea
+                                style="background-color: #9f9f9f00; border: 2px solid #000000; border-radius: 12px;"
+                                id="mensagem" placeholder="Escreva sua mensagem aqui..." name="mensagem" rows="4"
+                                class="form-control"></textarea> </div>
+                        <div class="col-12 text-center"> <button id="btn-enviar" type="submit"
+                                class="btn btn-success px-4 py-2 mt-3 rounded-3"> Enviar </button> </div>
                     </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <footer style="background-color: #626161;" class=" text-white text-center p-4">
+        <div style="color: black;" class="container">
+            <div class="row mb-2">
+                <div class="col">
+                    <a id="footer-link" class="me-3" href="https://www.instagram.com/racionaiscn/?hl=pt#"
+                        target="_blank">
+                        <i style="color: black;" class="fa-brands fa-instagram"></i> Instagram
+                    </a>
+                    <a id="footer-link" class="me-3" href="https://www.facebook.com/racionaiscn/" target="_blank">
+                        <i style="color: black;" class="fa-brands fa-facebook"></i> Facebook
+                    </a>
+                    <a id="footer-link" class="me-3" href="https://x.com/racionaiscn" target="_blank">
+                        <i style="color: black;" class="fa-brands fa-x-twitter"></i> Twitter
+                    </a>
+                    <a id="footer-link" href="https://www.youtube.com/@RacionaisTV/videos" target="_blank">
+                        <i style="color: black;" class="fa-brands fa-youtube"></i> YouTube
+                    </a>
                 </div>
+            </div>
+            <div>
+                <p class="mb-0">Copyright &copy; 2025 Elison Emanuel. Todos os direitos reservados</p>
             </div>
         </div>
     </footer>
 
 
-
-
-    <script>
-        function enviarFormulario() {
-            var mensagemSucesso = document.querySelector(".mensagem-sucesso");
-            mensagemSucesso.style.display = "block";
-            mensagemSucesso.style.opacity = 1;
-            setTimeout(function () {
-                mensagemSucesso.style.transition = 0;
-                mensagemSucesso.style.display = "none";
-            }, 4000);
-            return true;
-        }
-    </script>
-
-
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
-        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
 </body>
 
